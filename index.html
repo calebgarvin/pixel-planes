@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#26547f" />
+    <title>Pixel Planes</title>
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Nunito:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" crossorigin src="./assets/index-BF1y5yv9.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-CezY3JMj.css">
+  </head>
+  <body class="no-game">
+    <canvas id="map" aria-label="World map"></canvas>
+
+    <header id="hud">
+      <div class="brand">
+        <span class="logo" aria-hidden="true"></span>
+        <span class="title">Pixel Planes</span>
+      </div>
+      <div class="cash-block">
+        <div id="cash" class="cash">$0</div>
+        <div id="rate" class="rate">+$0/min</div>
+      </div>
+      <button id="btn-settings" class="icon-btn" aria-label="Settings">⚙</button>
+    </header>
+
+    <div id="map-controls">
+      <button id="btn-zoom-in" class="icon-btn" aria-label="Zoom in">＋</button>
+      <button id="btn-zoom-out" class="icon-btn" aria-label="Zoom out">－</button>
+      <button id="btn-home" class="icon-btn" aria-label="Center on home">⌂</button>
+    </div>
+
+    <aside id="panel"></aside>
+    <div id="toasts" aria-live="polite"></div>
+
+  </body>
+</html>

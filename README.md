@@ -6,6 +6,8 @@ bankruptcy, no rush. Your airline keeps flying while the tab is closed.
 
 Inspired by the loop of *Pocket Planes*, simplified for a low-stress foundation.
 
+**▶ Play it:** https://calebgarvin.github.io/pixel-planes/
+
 ## Quick start
 
 ```bash
@@ -22,8 +24,10 @@ Open the URL Vite prints (usually http://localhost:5173), pick a home airport, a
 | `npm run build`     | Type-check, then build static files to `dist/` |
 | `npm run preview`   | Serve the production build locally            |
 | `npm run typecheck` | TypeScript only                               |
+| `npm run deploy`    | Build and publish to GitHub Pages             |
 
-There's no backend. `dist/` can go on any static host (GitHub Pages, Netlify, etc.).
+There's no backend. `npm run deploy` builds the game and publishes it to the `gh-pages`
+branch, which GitHub Pages serves. `dist/` also works on any other static host.
 
 ## How to play
 

@@ -120,6 +120,7 @@ function boot(): void {
   const loaded = loadGame();
   if (loaded) {
     state = loaded;
+    document.body.classList.remove('no-game');
     const summary = simulateTo(state, Date.now()); // offline progress
     if (import.meta.env.DEV) console.info('[pixel-planes] offline catch-up', summary);
     shownCash = state.cash - summary.earned - summary.passive;
